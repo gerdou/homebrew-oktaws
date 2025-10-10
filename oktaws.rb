@@ -5,21 +5,21 @@
 class Oktaws < Formula
   desc "Helps getting aws cli credentials using okta"
   homepage "https://github.com/vahid-haghighat/oktaws"
-  version "1.0.1"
+  version "1.1.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/vahid-haghighat/oktaws/releases/download/v1.0.1/oktaws_Darwin_x86_64.tar.gz", using: CurlDownloadStrategy
-      sha256 "e0774a761170646c9ca8e03c6a96ec62e11a9d0c779b1463a326604394ba32df"
+      url "https://github.com/vahid-haghighat/oktaws/releases/download/v1.1.0/oktaws_Darwin_x86_64.tar.gz", using: CurlDownloadStrategy
+      sha256 "19121bc7beeebba50ca97b922d4b5d4f8f922ee9eaa9e69582931e76cc6d8171"
 
       def install
         bin.install "oktaws"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/vahid-haghighat/oktaws/releases/download/v1.0.1/oktaws_Darwin_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "1d6d3ec603594023c064f4f2cbe2150612560b76267c1b738b4b46105cda9f61"
+      url "https://github.com/vahid-haghighat/oktaws/releases/download/v1.1.0/oktaws_Darwin_arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "2651a83b01a55fd919d2d2429451ce6bc45a7fab1910901a8f5ceff0ed4d063e"
 
       def install
         bin.install "oktaws"
@@ -29,15 +29,15 @@ class Oktaws < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/vahid-haghighat/oktaws/releases/download/v1.0.1/oktaws_Linux_x86_64.tar.gz", using: CurlDownloadStrategy
-      sha256 "f74382fb63fc9ca7cbbb52ea69a2b12e8c99bd3950d3a136c7b3a4bca00bba8b"
+      url "https://github.com/vahid-haghighat/oktaws/releases/download/v1.1.0/oktaws_Linux_x86_64.tar.gz", using: CurlDownloadStrategy
+      sha256 "de06df760c9fb47a5f90d9787896efb4c15b6b3e173ec48b1e396f71a7bd5c21"
       def install
         bin.install "oktaws"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/vahid-haghighat/oktaws/releases/download/v1.0.1/oktaws_Linux_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "bd478a0d71ea045e8429ad4a2b1fd18d7893c7f4ebd0010152468cc71f0b28d5"
+      url "https://github.com/vahid-haghighat/oktaws/releases/download/v1.1.0/oktaws_Linux_arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "a986bed9b54b03f20926224129f55430cf372025e8f0ac8ee0da5e5ed3e916ac"
       def install
         bin.install "oktaws"
       end
